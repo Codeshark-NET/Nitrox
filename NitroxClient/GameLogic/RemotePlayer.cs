@@ -274,6 +274,9 @@ namespace NitroxClient.GameLogic
                     AnimationController["bench_sit"] = state == AnimChangeState.ON;
                     AnimationController["bench_stand_up"] = state == AnimChangeState.OFF;
                     break;
+                case AnimChangeType.INFECTED:
+                    AnimationController["player_infected"] = state == AnimChangeState.ON;
+                    break;
             }
 
             // Change two parameters of the collider depending on the state of the player
